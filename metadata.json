@@ -1,0 +1,6 @@
+{
+  "name": "Price Amit Medical Hall",
+  "description": "Trusted pharmacy and medical store in Bihar providing genuine medicines, surgical supplies, and health essentials with stock availability checker and WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

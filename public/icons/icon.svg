@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A8F6A" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="110" fill="url(#primaryGrad)" />
+  
+  <!-- Subtle Inner Ring -->
+  <circle cx="256" cy="256" r="216" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.2" />
+
+  <!-- Shield / Card Container -->
+  <rect x="76" y="76" width="360" height="360" rx="64" fill="#ffffff" filter="url(#shadow)" />
+
+  <!-- Medical Cross Accent -->
+  <g transform="translate(256, 230)">
+    <!-- Vertical Bar -->
+    <rect x="-32" y="-100" width="64" height="200" rx="20" fill="#0A8F6A" />
+    <!-- Horizontal Bar -->
+    <rect x="-100" y="-32" width="200" height="64" rx="20" fill="#0A8F6A" />
+    
+    <!-- Central Heartbeat / Plus Core -->
+    <circle cx="0" cy="0" r="30" fill="#ffffff" />
+    <path d="M-18 2 L-8 2 L-4 -12 L4 12 L8 -4 L14 2 L18 2" fill="none" stroke="#0284C7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Rx Symbol & Badge -->
+  <g transform="translate(180, 360)">
+    <!-- Pill Capsule badge -->
+    <rect x="-60" y="-18" width="120" height="36" rx="18" fill="#F0FDF4" stroke="#0A8F6A" stroke-width="2" />
+    <text x="0" y="6" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#0A8F6A" text-anchor="middle" letter-spacing="1.5">AMIT Rx</text>
+  </g>
+
+  <g transform="translate(332, 360)">
+    <rect x="-60" y="-18" width="120" height="36" rx="18" fill="#F0F9FF" stroke="#0284C7" stroke-width="2" />
+    <text x="0" y="6" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#0284C7" text-anchor="middle" letter-spacing="1">BIHAR</text>
+  </g>
+</svg>
